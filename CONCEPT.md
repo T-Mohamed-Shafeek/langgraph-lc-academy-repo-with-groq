@@ -9,6 +9,7 @@ at each and every point (Node) in the graph )
 5. So, LG can help us create a complex agentic system where we can introduce looping between the nodes/steps (step1->step2->step1)
 until the desired goal is achieved, branching (letting the node to decide which edge/path to go), human-in-the-loop (allowing us to 
 interfere for crucial decision making)
+6. The term 'chain' means just a collection of Sequential/Linear Steps/Nodes, mostly applicable in LangChain.
 
 ## Why LG?
 Even without LG, we can build agentic system but here is the catch:
@@ -63,7 +64,7 @@ class MessagesState(TypedDict):
     messages: Annotated[list[AnyMessage], add_messages]
     
 1. MessagesState is TypedDict that has one Key called 'messages'. And in this key new messages (AnyMessae) will be appended.
-2. asically, the Nature of a Node is that it takes a State as input and returns an Updated state, overwriting the state in the whole group.
+2. Basically, the Nature of a Node is that it takes a State as input and returns an Updated state, overwriting the state in the whole group.
 3. But, here we are passing Messages as the state, so thinking logically, we should not overwrite the 
 message.
 4. Overwritting message state means that we're actually forgetting to preserve the previous message. So whenever
