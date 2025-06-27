@@ -4,13 +4,13 @@ from trustcall import create_extractor
 
 from langchain_core.messages import SystemMessage
 from langchain_core.runnables.config import RunnableConfig
-from langchain_openai import ChatOpenAI
+from langchain_groq import ChatGroq
 from langgraph.graph import StateGraph, MessagesState, START, END
 from langgraph.store.base import BaseStore
 import configuration
 
 # Initialize the LLM
-model = ChatOpenAI(model="gpt-4o", temperature=0) 
+model = ChatGroq(model="llama3-8b-8192", temperature=0) 
 
 # Schema 
 class UserProfile(BaseModel):
