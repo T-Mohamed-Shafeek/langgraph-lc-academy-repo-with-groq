@@ -66,7 +66,7 @@ PS> $env:API_ENV_VAR = "your-api-key-here"
 ### Sign up and Set LangSmith API
 * Sign up for LangSmith [here](https://smith.langchain.com/), find out more about LangSmith
 * and how to use it within your workflow [here](https://www.langchain.com/langsmith), and relevant library [docs](https://docs.smith.langchain.com/)!
-*  Set `LANGCHAIN_API_KEY`, `LANGCHAIN_TRACING_V2=true` in your environment 
+*  Set `LANGSMITH_API_KEY`, `LANGSMITH_TRACING_V2=true` in your environment 
 
 ### Set up Tavily API for web search
 

@@ -39,5 +39,5 @@ services:
         environment:
             REDIS_URI: redis://langgraph-redis:6379
             GROQ_API_KEY: "your_GROQ_API_KEY"
-            LANGSMITH_API_KEY: "your_langchain_api_key"
+            LANGSMITH_API_KEY: "your_LANGSMITH_API_KEY"
             POSTGRES_URI: postgres://postgres:postgres@langgraph-postgres:5432/postgres?sslmode=disable
